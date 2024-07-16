@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to right,#0C6A53,#03FABD);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quixogameproject.controllers.BoardViewController">
+   <children>
+      <Label fx:id="labelActivePlayer" prefHeight="18.0" prefWidth="385.0" text="Tour joueur : " textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <HBox alignment="CENTER" prefHeight="343.0" prefWidth="600.0">
+         <children>
+             <GridPane fx:id="boardGrid" gridLinesVisible="true" layoutX="120.0" layoutY="91.0" prefHeight="226.0" prefWidth="600.0">
+                 <columnConstraints>
+                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                 </columnConstraints>
+                 <rowConstraints>
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                 </rowConstraints>
+               <children>
+                  <Label />
+                  <Button fx:id="b01" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="↓" GridPane.columnIndex="1" />
+                  <Button fx:id="b02" mnemonicParsing="false" text="↓" GridPane.columnIndex="2" />
+                  <Button fx:id="b03" mnemonicParsing="false" text="↓" GridPane.columnIndex="3" />
+                  <Button fx:id="b04" mnemonicParsing="false" text="↓" GridPane.columnIndex="4" />
+                  <Button fx:id="b05" mnemonicParsing="false" text="↓" GridPane.columnIndex="5" />
+                  <Label GridPane.columnIndex="6" />
+                  <Button fx:id="b10" mnemonicParsing="false" text="→" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Button fx:id="b11" mnemonicParsing="false" />
+                        <Label fx:id="l11" text="0" textFill="#faf9f9">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <Button fx:id="b12" mnemonicParsing="false" />
+                        <Label fx:id="l12" text="Label" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <children>
+                        <Button fx:id="b13" mnemonicParsing="false" />
+                        <Label fx:id="l13" text="Label" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <children>
+                        <Button fx:id="b14" mnemonicParsing="false" />
+                        <Label fx:id="l14" text="Label" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <children>
+                        <Button fx:id="b15" mnemonicParsing="false" />
+                        <Label fx:id="l15" text="Label" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <Button fx:id="b16" mnemonicParsing="false" text="←" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <Button fx:id="b20" mnemonicParsing="false" text="→" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Button fx:id="b21" mnemonicParsing="false" />
+                        <Label fx:id="l21" text="Label" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <Label fx:id="l22" text="test" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Label>
+                  <Label fx:id="l23" text="Label" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Label>
+                  <Label fx:id="l24" text="Label" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Label>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                     <children>
+                        <Button fx:id="b25" mnemonicParsing="false" />
+                        <Label fx:id="l25" text="Label" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <Button fx:id="b26" mnemonicParsing="false" text="←" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                  <Button fx:id="b30" mnemonicParsing="false" text="→" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <Button fx:id="b31" mnemonicParsing="false" />
+                        <Label fx:id="l31" text="Label" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <Label fx:id="l32" text="Label" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Label>
+                  <Label fx:id="l33" text="Label" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Label>
+                  <Label fx:id="l34" text="Label" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Label>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                     <children>
+                        <Button fx:id="b35" mnemonicParsing="false" />
+                        <Label fx:id="l35" text="Label" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <Button fx:id="b36" mnemonicParsing="false" text="←" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                  <Button fx:id="b40" mnemonicParsing="false" text="→" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <children>
+                        <Button fx:id="b41" mnemonicParsing="false" />
+                        <Label fx:id="l41" text="Label" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <Label fx:id="l42" text="Label" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Label>
+                  <Label fx:id="l43" text="Label" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Label>
+                  <Label fx:id="l44" text="Label" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Label>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                     <children>
+                        <Button fx:id="b45" mnemonicParsing="false" />
+                        <Label fx:id="l45" text="Label" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <Button fx:id="b46" mnemonicParsing="false" text="←" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                  <Button fx:id="b50" mnemonicParsing="false" text="→" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <children>
+                        <Button fx:id="b51" mnemonicParsing="false" />
+                        <Label fx:id="l51" text="Label" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <children>
+                        <Button fx:id="b52" mnemonicParsing="false" />
+                        <Label fx:id="l52" text="Label" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                     <children>
+                        <Button fx:id="b53" mnemonicParsing="false" />
+                        <Label fx:id="l53" text="Label" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                     <children>
+                        <Button fx:id="b54" mnemonicParsing="false" />
+                        <Label fx:id="l54" text="Label" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                     <children>
+                        <Button fx:id="b55" mnemonicParsing="false" />
+                        <Label fx:id="l55" text="Label" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <Button fx:id="b56" mnemonicParsing="false" text="←" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                  <Label GridPane.rowIndex="6" />
+                  <Button fx:id="b61" mnemonicParsing="false" text="↑" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Button fx:id="b62" mnemonicParsing="false" text="↑" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <Button fx:id="b63" mnemonicParsing="false" text="↑" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                  <Button fx:id="b64" mnemonicParsing="false" text="↑" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                  <Button fx:id="b65" mnemonicParsing="false" text="↑" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                  <Label GridPane.columnIndex="6" GridPane.rowIndex="6" />
+               </children>
+             </GridPane>
+         </children>
+      </HBox>
+      <Label fx:id="labelTimeElapsed" prefHeight="18.0" prefWidth="154.0" text="Temps ecoulé : " textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="labelNbrOfMoves" prefHeight="18.0" prefWidth="154.0" text="Nombre de coups : " textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+   </children>
+</VBox>

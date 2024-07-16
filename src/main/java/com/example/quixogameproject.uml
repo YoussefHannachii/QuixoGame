@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/USER/Desktop/QuixoGameProject/src/main/java/com/example/quixogameproject</OriginalElement>
+  <nodes>
+    <node x="-25.791666666666686" y="676.0">com.example.quixogameproject.controllers.BoardViewController</node>
+    <node x="372.7447916666667" y="-14.0">com.example.quixogameproject.util.Observer</node>
+    <node x="938.5" y="-14.0">com.example.quixogameproject.controllers.WinnerViewController</node>
+    <node x="109.0" y="101.0">com.example.quixogameproject.models.Board</node>
+    <node x="600.5" y="-14.0">com.example.quixogameproject.controllers.GameViewController</node>
+    <node x="1583.5" y="-14.0">com.example.quixogameproject.QuixoApp</node>
+    <node x="1317.5" y="-14.0">com.example.quixogameproject.controllers.MenuViewController</node>
+    <node x="-110.0" y="2084.0">com.example.quixogameproject.models.AIPlayer</node>
+    <node x="1796.5" y="-14.0">com.example.quixogameproject.HelloApplication</node>
+    <node x="-110.0" y="293.0">com.example.quixogameproject.models.Player</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.example.quixogameproject.controllers.BoardViewController" target="com.example.quixogameproject.models.Player" relationship="CREATE">
+      <point x="-221.20833333333331" y="-681.5" />
+      <point x="-0.0" y="69.5" />
+    </edge>
+    <edge source="com.example.quixogameproject.controllers.BoardViewController" target="com.example.quixogameproject.util.Observer" relationship="REALIZATION">
+      <point x="157.66666666666669" y="-681.5" />
+      <point x="368.375" y="655.0" />
+      <point x="549.5" y="655.0" />
+      <point x="549.5" y="75.0" />
+      <point x="472.49479166666674" y="75.0" />
+      <point x="33.25" y="31.5" />
+    </edge>
+    <edge source="com.example.quixogameproject.controllers.BoardViewController" target="com.example.quixogameproject.models.Player" relationship="TO_ONE">
+      <point x="-206.20833333333331" y="-681.5" />
+      <point x="15.0" y="69.5" />
+    </edge>
+    <edge source="com.example.quixogameproject.controllers.BoardViewController" target="com.example.quixogameproject.models.Board" relationship="TO_ONE">
+      <point x="113.29166666666669" y="-681.5" />
+      <point x="-0.0" y="261.5" />
+    </edge>
+    <edge source="com.example.quixogameproject.models.Board" target="com.example.quixogameproject.util.Observer" relationship="TO_MANY">
+      <point x="115.24479166666669" y="-261.5" />
+      <point x="-0.0" y="31.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.31407611187528656" showDependencies="true" x="941.5" y="894.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
